@@ -2,5 +2,5 @@
 > Category
 
 ### Dev Lang.
-[Java Study](https://github.com/SangGeun-Jeong/TIL/tree/main/Java)
+1. [Java](https://github.com/SangGeun-Jeong/TIL/tree/main/Java) : Java Study
 
