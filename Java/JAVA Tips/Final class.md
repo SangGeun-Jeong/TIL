@@ -110,3 +110,48 @@ public void finalTest() {
 		// x = 11; => 컴파일 에러, 원시타입의 값에 재대입 불가
 }
 ```
+
+---
+
+# final 변수의 짝궁, static
+
+```java
+public class Sphere {
+		// PI 변수는 상수로 선언되어 수정할 수 없음
+		public static final double PI = 3.1459235353524;
+
+		public final double radius;
+		public final double xPos;
+		public final double yPos;
+		public final double zPos;
+
+		Sphere(double x, double y, double z, double r) {
+				radius = r;
+				xPos = x;
+				yPos = y;
+				zPos = z;
+		}
+		
+		[...]
+}
+```
+
+## Static
+
+> Static을 붙이면 메모리에 딱 한번만 할당되어 메모리를 효율적으로 사용할 수 있다.
+> 
+> 
+> 즉, 같은 주소값을 공유한다는 의미로 여기저기에 변수 하나로 공유 가능
+> 
+
+## Static과 final의 궁합
+
+> final 변수를 쓰면 그 값을 계속 그대로 쓴다는 의미.
+> 
+> 
+> 어차피 같은 값을 계속 쓸거면 메모리도 낭비 없이 하나로 쭉 쓰면 효율이 높아지므로
+> 
+> static과 final을 같이 쓰는 경우가 많아짐.
+> 
+
+**앞에서 나온 `blank final`변수는 인스턴스 마다 다른 값을 가지기 때문에 이런 식으로 final이어도 초기화가 다르게 된다면 static을 사용하지 않게 됨.*
