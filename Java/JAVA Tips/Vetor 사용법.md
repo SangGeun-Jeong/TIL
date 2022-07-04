@@ -32,4 +32,7 @@
 > 
 > 
 > 동기화 옵션이 존재, 그리고 벡터에 비해 속도가 더 빠르기 떄문에 많이 쓰이고 있음.
-> 
+
+![Image](https://user-images.githubusercontent.com/108352215/177112500-558a8e23-7fcd-496b-8256-86ab25d030c6.PNG)
+
+
