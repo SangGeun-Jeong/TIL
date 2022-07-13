@@ -1,10 +1,10 @@
 # 5회차 AWS SES, ELB, ALB
 
-[5회차 AWS SES, ELB, ALB.pdf](5%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AWS%20SES,%20ELB,%20ALB%202a8a223bd4da49d085de92b6f9901090/5%ED%9A%8C%EC%B0%A8_AWS_SES_ELB_ALB.pdf)
+<br />
 
 # Amazon Simple Email Service(SES)
 
-![Untitled](5%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AWS%20SES,%20ELB,%20ALB%202a8a223bd4da49d085de92b6f9901090/Untitled.png)
+![Untitled 1](https://user-images.githubusercontent.com/108352215/178626208-58127ae6-74d3-4202-b67b-9a759943f9c2.png)
 
 개발자가 모든 애플리케이션 내에서 이메일을 보낼 수 있는 경제적이고 확장성 있는 이메일 서비스
 
@@ -14,10 +14,12 @@
 
 <aside>
 💡 전 세계에 안전하게 대규모 이메일 발송 가능
-
 </aside>
 
 ---
+
+<br />
+<br />
 
 # 학습 목표
 
@@ -65,12 +67,15 @@
 
 ---
 
+<br />
+<br />
+
 # AWS 클라우드 ELB(Elastic Load Balancing)
 
 > ELB는 한곳에 집중되는 HTTP, TCP, SSL 트래픽을 여러 EC2인스턴스로 분산
 > 
 
-![Untitled](5%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AWS%20SES,%20ELB,%20ALB%202a8a223bd4da49d085de92b6f9901090/Untitled%201.png)
+![Untitled 2](https://user-images.githubusercontent.com/108352215/178626215-41e0c647-d74c-448d-98cf-1eb25635ae6f.png)
 
 - ELB는 다양한 프로토콜 지원
 - 서버가 정상적으로 가동 중인지 확인(Health Check)하여 일부 EC2 인스턴스가 중단되더라도 트래픽을 정상 EC2 인스턴스로 전달
@@ -107,21 +112,21 @@
     - EC2인스턴스 2개를 각가 다른 가용 영역에 생성(OS 는 Amazon Linux 설치)
 - ELB Configuration
     
-    ![Untitled](5%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AWS%20SES,%20ELB,%20ALB%202a8a223bd4da49d085de92b6f9901090/Untitled%202.png)
+    ![Untitled 3](https://user-images.githubusercontent.com/108352215/178626216-b10092d7-ad59-4f4a-98f9-486553a91ef5.png)
     
     EC2 페이지 → ELB 로드 밸런서 목록(NETWORK & SECURITY → Load Balancers) → Create Load Balancer
     
     - Enable Connection Draining : Connection Draining 사용 옵션 설정
     - Enable Cross-Zone Load Balancing : 여러 가용 영역에 있는 대상에 부하를 분산하는 옵션
     
-    ![Untitled](5%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AWS%20SES,%20ELB,%20ALB%202a8a223bd4da49d085de92b6f9901090/Untitled%203.png)
+    ![Untitled 4](https://user-images.githubusercontent.com/108352215/178626217-da780ea6-90df-4cb7-b90c-67e82278ac73.png)
     
     전체 들어오는 양은 60으로 똑같은데 로드밸런싱을 `ON` 했을 때와 `Off` 했을 때의 부하차이가 발생.
     
 
 - Health Check Configuration
     
-    ![Untitled](5%E1%84%92%E1%85%AC%E1%84%8E%E1%85%A1%20AWS%20SES,%20ELB,%20ALB%202a8a223bd4da49d085de92b6f9901090/Untitled%204.png)
+    ![Untitled](https://user-images.githubusercontent.com/108352215/178626219-49778d67-ae5e-46bd-97ab-ba2caaf9d1ee.png)
     
     헬스 체크를 어느 정도 주기로 할 것인지 설정. (적절한 횟수로 조정)
     
@@ -140,6 +145,9 @@
 - 앞에서 생성한 EC2 인스턴스 2개를 선택하여 ELB 로드 밸런서에 연결
 
 ---
+
+<br />
+<br />
 
 # AWS 클라우드 ALB (Application Load Balancer)
 
@@ -168,6 +176,9 @@
 
 ---
 
+<br />
+<br />
+
 <aside>
 💡 AWS EC2 서버 인스턴스에 발생하는 부하를 분산시키기 위한 AWS 서비스는?
 
@@ -190,6 +201,9 @@
 - `*`
 
 ---
+
+<br />
+<br />
 
 # 정리하기
 
