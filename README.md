@@ -3,7 +3,7 @@
 
 ### Dev Lang.
 1. [Java](https://github.com/SangGeun-Jeong/TIL/tree/main/Java) : Java Study
-2. [JavaScript](https://github.com/SangGeun-Jeong/TIL/tree/main/JavaScript) : JS Study
+2. [JavaScript](https://github.com/SangGeun-Jeong/TIL/tree/main/JavaScript) : JavaScript Study
 3. [Swift](https://github.com/SangGeun-Jeong/TIL/tree/main/Swift) : Swift Study
 
 ### Course
